@@ -3,7 +3,8 @@ syntax = "proto3";
 package ankleface.v1;
 
 service AnkleFace {
-  rpc Connect(stream Event) returns (stream Event);
+  // Used by ankle to connect to face
+  rpc ConnectFace(stream Event) returns (stream Event);
 }
 
 message Event {

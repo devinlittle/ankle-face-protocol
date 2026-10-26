@@ -9,6 +9,7 @@ license = "AGPL-3.0-only"
 [dependencies]
 prost = "0.14.4"
 tonic = "0.14.6"
+tonic-prost = "0.14.6"
 
 [build-dependencies]
 tonic-prost-build = "0.14.6"
