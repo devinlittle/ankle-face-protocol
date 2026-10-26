@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package ankleface.v1;
+
+service AnkleFace {
+  rpc Connect(stream Event) returns (stream Event);
+}
+
+message Event {
+  string message_id = 1;
+
+  User from = 3;
+
+  oneof payload {
+    BlinkLed blink_led = 10;
+  }
+}
+
+message User {
+  string user_id = 1;
+  string username = 2;
+}
+
+message BlinkLed {
+  bool enabled = 1;
+  uint32 duration_ms = 2;
+}
+

@@ -1,0 +1,14 @@
+[package]
+name = "ankle-face-protocol"
+version = "0.0.1"
+edition = "2024"
+authors = ["Devin Little <devinlittlee@gmail.com>"]
+repository = "https://git.home.devinlittle.net/devin/ankle-face-protocol.git"
+license = "AGPL-3.0-only"
+
+[dependencies]
+prost = "0.14.4"
+tonic = "0.14.6"
+
+[build-dependencies]
+tonic-prost-build = "0.14.6"
